@@ -103,12 +103,110 @@ Freelancer Page
 ![fr-chp](https://github.com/user-attachments/assets/32f2c8ad-ffbb-44ac-81e1-66fd083fba4d)
 
 
-## 🙋‍♂️ Author
+🔧 Technical Requirements:
+- JDK 8 or higher
+- Apache Tomcat 9 or higher
+- MySQL Server (or use XAMPP)
+- Eclipse IDE (for developers)
 
-**Vishal Yadav**  
-📧 Email: [mr.vishalyadav03@gmail.com](mr.vishalyadav0311@gmail.com)  
+-----------------------------------------------
+👥 Instructions for Non-Technical Users (Simple Setup)
+
+✅ OPTION 1: RUN WITH XAMPP + TOMCAT BUNDLE
+
+1. **Download and Install XAMPP**
+   - Go to: https://www.apachefriends.org
+   - Install XAMPP (includes MySQL and phpMyAdmin)
+
+2. **Start Services**
+   - Open XAMPP Control Panel
+   - Start `Apache` and `MySQL`
+
+3. **Import the Database**
+   - Open your browser and go to:
+     ```
+     http://localhost/phpmyadmin
+     ```
+   - Click "New", create a database:
+     ```
+     freelancer_db
+     ```
+   - Click "Import" tab and upload:
+     ```
+     freelancer_portal_db.sql
+     ```
+
+4. **Run the Project with a Pre-installed Server (Tomcat)**
+   - (Optional) Use portable Tomcat or Eclipse if available
+   - Otherwise, ask a technical friend to deploy `/FreelancerPortal` folder inside:
+     ```
+     apache-tomcat-X.X.X/webapps/
+     ```
+   - Then run Tomcat and go to:
+     ```
+     http://localhost:8080/FreelancerPortal/
+     ```
+
+-----------------------------------------------
+💻 Instructions for Developers (Using Eclipse IDE)
+
+1. **Import Project into Eclipse**
+   - Open Eclipse IDE
+   - File > Import > Existing Projects into Workspace
+   - Select extracted project folder
+
+2. **Setup Apache Tomcat in Eclipse**
+   - Servers tab > Add New Server > Apache Tomcat v9.0
+   - Add project to the server
+
+3. **Run the App**
+   - Right-click project > Run on Server
+   - Visit:
+     ```
+     http://localhost:8080/FreelancerPortal/
+     ```
+
+4. **Database Setup**
+   - Use phpMyAdmin or MySQL Workbench
+   - Create database `freelancer_db`
+   - Import the SQL file
+
+5. **Edit DB Configuration**
+   - Open:
+     ```
+     src/com/db/DBConnect.java
+     ```
+   - Change DB credentials if needed:
+     ```java
+     Connection conn = DriverManager.getConnection(
+         "jdbc:mysql://localhost:3306/freelancer_db", "root", "your_password");
+     ```
+
+-----------------------------------------------
+🔐 Default Login Credentials:
+
+👤 Admin:
+- Email: `admin@gmail.com`
+- Password: `admin123`
+
+🧑‍💼 Client or Freelancer:
+- Use the registration links from homepage to create account
+
+-----------------------------------------------
+📌 Notes:
+- Make sure MySQL server is running before accessing the portal
+- Adjust port or context path in URL if different
+- If using Eclipse, make sure to clean & build project if errors occur
+
+
+
+📧 Developer Info:
+Vishal Yadav  
+📧 Email: [mr.vishalyadav0311@gmail.com](mr.vishalyadav0311@gmail.com)  
 🔗 GitHub: [github.com/vishal-java-dev](https://github.com/vishal-java-dev)  
-🔗 LinkedIn: [linkedin.com/in/vishal-java-developer](https://www.linkedin.com/in/vyadav03)
+🔗 LinkedIn: [linkedin.com/in/vishal-java-developer](https://www.linkedin.com/in/vyadav03) 
+Year: 2025
+
 
 ---
 
