@@ -1,0 +1,26 @@
+# Ignore compiled class files
+*.class
+
+# Ignore log files
+*.log
+
+# Ignore packaged WAR files
+*.war
+
+# Ignore Eclipse and IntelliJ IDEA project files
+.settings/
+.project
+.classpath
+.idea/
+*.iml
+
+# Ignore build folders
+/build/
+/target/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+.metadata/
+
