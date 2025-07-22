@@ -204,7 +204,7 @@ Freelancer Page
 Vishal Yadav  
 📧 Email: [mr.vishalyadav0311@gmail.com](mr.vishalyadav0311@gmail.com)  
 🔗 GitHub: [github.com/vishal-java-dev](https://github.com/vishal-java-dev)  
-🔗 LinkedIn: [linkedin.com/in/vishal-java-developer](https://www.linkedin.com/in/vyadav03) 
+🔗 LinkedIn: [linkedin.com/in/vyadav03](https://www.linkedin.com/in/vyadav03) 
 Year: 2025
 
 
